@@ -46,6 +46,21 @@ function renderhomepage()
 
    h1.innertext ="cat list page"
    h1.stylemarginTop ="0"
+  
+   const fetch  =  () => {
+   fetch(`${baseurl}/api/v1/products?apikey=XXXXXXXXX`)
+   .then(res => res.json())
+   .then(data => console.log(data))
+   }
+
+   const fetchlistcat  =() => {
+      fetch ("http://localhost:3000/cat")
+        .then(resp => resp.json())
+        .then(data => console.log(data))
+   }
+   
+
+
    
    MainDiv().appendchild(h1)
    MainDiv().appendchild(p);

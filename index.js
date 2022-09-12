@@ -9,10 +9,10 @@
  Effect:display the homepage
 
  */
-
+ 
  // NODE GETTERS
  const MainDiv =() => Document.getElementByid("main")
- const listcatlink =() => document. getElementByid("list cat link");
+ const listcatlink = document.getElementByid("list cat link");
  const Homepagelink =document.getElementById("home-page-link");
  /**templates **/
  const homepagestemplate = () => {
@@ -37,7 +37,7 @@ const rendersHomepage = () => {
  }
 
 //eventHandlers
-function renderhomepage()
+ function renderhomepage()
    //create the Html elements for the homepage
    //reset mainDiv();
 
@@ -52,17 +52,17 @@ function renderhomepage()
    .then(res => res.json())
    .then(data => console.log(data))
    }
-
-   const fetchlistcat  =() => {
+  const fetchlistcat  =() => {
       fetch ("http://localhost:3000/cat")
         .then(resp => resp.json())
         .then(data => console.log(data)) 
    }
    
- MainDiv().appendchild(h1)
+
+  MainDiv().appendchild(h1)
    MainDiv().appendchild(p);
 
-function rendercatlistpage()
+  function rendercatlistpage()
    resetMaindiv();
 
    const h1 = document.createElement("h1");
@@ -71,9 +71,12 @@ function rendercatlistpage()
    
 //domcontentloaded//
 document.addEventListener("Domcontentloaded"), () => renderlisthomepage(); {
-   
 }
-attachlistcatclickEvent();
-attachHomepageclickEvent();
-attachrandomlistcatEvent();
+attach listcatclick();
+attachHomepageclickEvent()
+attachrandomlistcatEvent()
+
+  
+
+
 

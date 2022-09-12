@@ -10,7 +10,7 @@
 
  */
 
- //NODE GETTERS
+ // NODE GETTERS
  const MainDiv =() => Document.getElementByid("main")
  const listcatlink =() => document. getElementByid("list cat link");
  const Homepagelink =document.getElementById("home-page-link");
@@ -47,8 +47,8 @@ function renderhomepage()
    h1.innertext ="cat list page"
    h1.stylemarginTop ="0"
   
-   const fetch  =  () => {
-   fetch(`${baseurl}/api/v1/products?apikey=XXXXXXXXX`)
+   const fetch = () => {
+    fetch (`$ {baseurlhttps://thecatapi.com/)
    .then(res => res.json())
    .then(data => console.log(data))
    }
@@ -56,38 +56,24 @@ function renderhomepage()
    const fetchlistcat  =() => {
       fetch ("http://localhost:3000/cat")
         .then(resp => resp.json())
-        .then(data => console.log(data))
+        .then(data => console.log(data)) 
    }
    
-
-
-   
-   MainDiv().appendchild(h1)
+ MainDiv().appendchild(h1)
    MainDiv().appendchild(p);
 
-
-
-function rendercatlistpage() 
+function rendercatlistpage()
    resetMaindiv();
 
    const h1 = document.createElement("h1");
    const ul = document.createElement("ul");
    const li = Document.createElement("li");
-  
-   h1.innertext ="list cat page"
-   h1.stylemarginTop ="0"
    
-   
-//helpers
-function resetMaindiv() {
-   MainDiv().innerHtml =""
-
-}
 //domcontentloaded//
-document.addEventListener("Domcontentloaded"), () => renderlisthomepage();{
+document.addEventListener("Domcontentloaded"), () => renderlisthomepage(); {
+   
+}
 attachlistcatclickEvent();
 attachHomepageclickEvent();
 attachrandomlistcatEvent();
-}
-
 

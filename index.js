@@ -57,7 +57,7 @@ const rendersHomepage = () => {
         .then(resp => resp.json())
         .then(data => console.log(data)) 
    }
-   
+     
 
   MainDiv().appendchild(h1)
    MainDiv().appendchild(p);
